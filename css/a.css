@@ -1,0 +1,10 @@
+div {border: 0px solid #ffb000;}
+
+
+:root {--fontSizeH1: 95px;}
+:root {--wrapperPadding: 3%;}
+:root {--lightBrown: #55423d;}
+:root {--darkBrown: #271c19;}
+:root {--pink: #ffc0ad;}
+:root {--wrapperPaddingAverage: 1.8%;}
+:root {--wrapperPaddingMin: 0.8%;}

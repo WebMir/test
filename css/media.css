@@ -1,0 +1,352 @@
+@media screen and (max-width: 1300px) {
+    body{
+        font-size: 95%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    body{
+        font-size: 90%;
+    }
+}
+@media screen and (max-width: 1100px) {
+    /* body{
+        font-size: 85%;
+    } */
+
+}
+@media screen and (max-width: 1000px) {
+    /* body{
+        font-size: 80%;
+    } */
+    .sect1__body{
+        font-size: 85%;
+    }
+    .wrapper-padding{padding: var(--wrapperPaddingAverage);}
+    /* SECT-5 Карточка */
+    .sect5__card-wrapper{
+        display: block;
+    }
+    .sect5__card{
+        margin: 10px auto;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    /* body{
+        font-size: 70%;
+    } */
+    .header__button{
+        display: none;
+    }
+    .sect1__wrapper{
+        display: block;
+      
+    }
+
+    /* SECT-1 Блок с текстом*/
+    .sect1__body{
+        width: 100%;
+        align-items: center;
+    }
+    .sect1__body h1{
+        font-size: 4.1em;
+        text-align: center;
+    }
+    .sect1__body p{
+        font-size: 1.6em;
+        text-align: center;
+    }
+
+    /* SECT-1 	Кнопки под текстом*/
+    .sect1__button{
+        width: 100%;
+        max-width: 520px;
+    }
+    .sect1__button button{
+        width: 100%;
+        height: 40px;
+    }
+    .sect1__button form{
+        width: 100%;
+    }
+    .sect1__button form:last-child{
+        margin-left: 5px;
+    }
+    /* SECT-1 Блок с SVG картинками*/
+    .sect1__img{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 50%;
+        margin: 2em auto;
+    }
+    .sect1__img img{
+        width: 28%;
+    }
+
+
+
+    .title{font-size: 2.5em;}
+    .text{font-size: 1.4em;}
+    .sect2__card{
+        display: block;
+    }
+    .sect2 .card{
+        margin: 10px auto;
+    }
+    .sect3__card{/* Кбираем флекс чтоб карточки стали в колону*/
+        flex-direction: column;
+    }
+    .sect3__card{
+        display: flex;
+        justify-content: space-between;
+        margin: 50px auto;
+        max-width: 1400px;
+        	/* flex-wrap: wrap; */
+    }
+    .card__wrapper{
+        margin: -5px auto;
+    }
+    .sect3 .card{
+        background-color: #ffc0ad;
+        width: 100%;
+        max-width: 650px;
+        min-height: 120px;
+        border-radius: 5px;
+        margin: 10px 0px;
+        display: flex;
+        align-items: center;
+        box-shadow: 0px 0px 3px 0px #ffb000;
+    }
+    /* .sect3 .card__text, .sect2 .card__text{
+        font-size: 2em;
+    } */
+
+}
+
+
+@media screen and (max-width: 800px) {
+    /* .header__link {
+        font-size: 3em;
+    } */
+    .header__link{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+
+
+}
+
+@media screen and (max-width: 650px) {
+    .header__link{
+        margin: 0 0.5em;
+    }
+    .sect1__wrapper{
+        flex-direction: column;
+
+     }
+     .sect1__body{
+        align-items: center;
+        text-align: center;
+     }
+     .sect1__img{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+     }
+     .sect4__info{
+        width: 100%;
+        margin: 0 auto;
+     }
+     .sect4__img{
+         display: none;
+     }
+
+}
+@media screen and (max-width: 460px) {
+    body{
+        font-size: 80;
+    }
+    .sect1__wrapper{
+        height: 95vh;
+     }
+    .header__link{
+        display: none;
+    }
+    .header__nav-icon{
+        display: block
+    }
+    .sect1__wrapper{
+        display: block;
+      
+    }
+
+            /* SECT-1 Блок с текстом*/
+            .sect1__body{
+                width: 100%;
+                align-items: center;
+            }
+            .sect1__body h1{
+                font-size: 2.7em;
+            }
+            .sect1__body p{
+                font-size: 1.6em;
+            }
+
+            /* SECT-1 	Кнопки под текстом*/
+                .sect1__button{
+            flex-direction: column;
+            margin: 0;
+            }
+        .sect1__button{
+            width: 100%;
+            max-width: 520px;
+            }
+        .sect1__button button{
+            width: 80%;
+            height: 35px;
+            margin: 5px auto;
+            }
+    .sect1__body span {
+          font-size: 1em;
+       }
+
+    .sect1__button form:last-child{
+        margin-left: 0px;
+        }
+    .wrapper-padding{padding: var(--wrapperPaddingMin);}
+
+
+
+
+
+
+
+    /* SECT-5 Обертка одной карточки */
+    .sect5__card{
+        width: 18em;
+        min-width: auto;
+        height: 350px;
+        display: block;
+        position: relative;
+    }
+    .sect5__card:hover  .sect5__card-info{
+        top: -80%;
+    }
+
+    .sect5__card-img{
+        display: flex;
+        justify-content: center;
+        width: 250px;
+        /* height: 90% ; */
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+
+
+
+    .sect5__card-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 240px;
+        margin: 0 auto;
+        position: relative;
+        top: 0%;
+        left: 0%;
+        transition: top  0.3s;
+    }
+    .sect5__card-info p{
+        color:  #271c19;
+    }
+    .clip-path{
+        display: block;
+        clip-path: circle(0%);
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        opacity: 50%;
+        transition: clip-path  0.9s;
+    }
+    .sect5__card:hover  .clip-path{
+        clip-path: circle(100%);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+}
+
+@media screen and (max-width: 400px) {
+    body{
+        font-size: 70%;
+    }
+    .sect5__card {
+        width: 20em;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    /* body{
+        font-size: 50%;
+    } */
+    .sect4__info{
+        width: 100%;
+     }
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
