@@ -45,7 +45,8 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	margin: 0 auto;
-	border-top: 0px solid #807d7da2
+	border-top: 0px solid #807d7da2;
+	padding: var(--wrapperPadding);
 }
 /* HEADER	Обертка для логотипа и ссылок навигации*/
 .header__logNavWrapper{
@@ -53,7 +54,8 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin: 0 0 0 30px;
+	column-gap: 0.8rem;
+	margin-right: 0.8rem;
 }
 .header__logo{
 	font-family: 'Little Caesar';
@@ -63,22 +65,29 @@ header {
 }
 .header__link{
 	font-family: Proxima-nova, sans-serif;
-	color: #fff3ec;
+	color: var(--textColor);
 	font-size: 2em;
-	margin: 0 1em;
 }
 /* HEADER	Кнопки из навигации*/
+.svg-menu{
+	display: none;
+}
 .header__button{
 	display: flex;
-	justify-content: space-between;
+	justify-content:flex-end;
 	align-items: center;
-	margin: 0 30px 0 0;
+	column-gap: 0.5rem;
 	width: 100%;
 	max-width: 350px;
 }
-.header__button button{
-	width: 160px;
+.header__button form{
+	width: 100%;
 	height: 40px;
+
+}
+.header__button button{
+	width: 100%;
+	height: 100%;
 	background-color: #ffc0ad;
 	border-radius: 5px;
 	font-size: 20px;
@@ -119,13 +128,13 @@ header .first-child{
 .sect1__body h1{
 	font-family: Proxima-nova, sans-serif;
 	font-size: 5em;
-	color:#fffffe ;
+	color: var(--titleColor);
 	margin-bottom: 20px;
 }
 .sect1__body p{
 	font-family: Proxima-nova, sans-serif;
 	font-size: 2em;
-	color:#fffffe ;
+	color:var(--textColor);
 
 }
 /* SECT-1 	Кнопки под текстом*/
@@ -155,12 +164,11 @@ header .first-child{
 /* SECT-1 Ссылка под кнопками */
 .sect1__body span{
 	font-size: 1.5em;
-	color: #fffffe;
+	color: var(--textColor);
 	font-family: Proxima-nova, sans-serif;
 }
 .sect1__body span a{
-	color: #ffc0ad;
-
+	color: var(--linkColor);
 }
 /* SECT-1 Блок с SVG картинками*/
  .sect1__img{
@@ -210,7 +218,7 @@ header .first-child{
 .title{
 	font-family: Proxima-nova, sans-serif;
 	font-size: 4em;
-	color: #fffffe;
+	color: var(--titleColor);
 	text-align: center;
 	margin-top: 1.3em ;	
 	margin-bottom: 0.5em ;
@@ -221,7 +229,7 @@ header .first-child{
 	max-width: 900px;
 	font-family: Proxima-nova, sans-serif;
 	font-size: 2em;
-	color: #fff3ec;
+	color: var(--textColor);
 	text-align: center;
 	margin: 0 auto;
 	margin: 0.5em auto;
@@ -260,14 +268,14 @@ header .first-child{
 	font-family: Proxima-nova, sans-serif;
 	font-size: 2.5em;
 	text-align: center;
-	color: #fffffe;
+	color: var(--titleColor);
 	margin: 5px;
 }
 /* SECT-2 текст карточки */
 .sect2 .card__text{
 	font-family: Proxima-nova, sans-serif;
 	font-size: 1.3em;
-	color: #fff3ec;
+	color: var(--textColor);
 	text-align: justify;
 	margin: 0.3em 0.5em;
 }
@@ -389,7 +397,7 @@ header .first-child{
  .sect4__svg-p p{
 	font-family: Proxima-nova, sans-serif;
 	font-size: 1.3em;
-	color: #fff3ec;
+	color: var(--textColor);
 	margin: 5px;
  }
 
@@ -429,7 +437,7 @@ header .first-child{
 /* SECT-4 Ссылка под кнопками */
 
 .sect4__button a{
-	color: #ffffff;
+	color: var(--linkColor);
 	font-family: Proxima-nova, sans-serif;
 	font-size: 1em;
 	margin: 0.3em;
@@ -496,20 +504,49 @@ header .first-child{
 				justify-content: center;
 				width: 58%;
 			}
-				/* SECT-5 заголовок карточки */
-				.sect5__card-info img{
-					margin: 5px auto;
-					width: 80%;
-				}
-				/* SECT-5 текст карточки */
-				.sect5__card-info p{
-					font-family: Proxima-nova, sans-serif;
-					font-size: 1em;
-					color: #fff3ec;
-					text-align: justify;
-					margin: 0.3em 0.5em;
-				}
-				.clip-path{
-					display: none;
-				}
+/* SECT-5 заголовок карточки */
+.sect5__card-info img{
+	margin: 5px auto;
+	width: 80%;
+}
+/* SECT-5 текст карточки */
+.sect5__card-info p{
+	font-family: Proxima-nova, sans-serif;
+	font-size: 1em;
+	color: var(--textColor);
+	text-align: justify;
+	margin: 0.3em 0.5em;
+}
+.clip-path{
+	display: none;
+}
+
+/* SECT-6*/
+
+.sect6{
+	background: var(--pink);
+ }
+ .sect6__wrapper{
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+ }
+
+.sect6__list{
+
+	display: flex;
+	flex-direction: column;
+	/* justify-content: space-evenly; */
+	align-items: flex-end;
+	row-gap: 10px;
+
+}
+
+/* .sect6__link-title{
+
+} */
 

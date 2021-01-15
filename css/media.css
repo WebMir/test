@@ -35,14 +35,14 @@
     /* body{
         font-size: 70%;
     } */
-    .header__button{
-        display: none;
-    }
+      /* HEADER*/
+
+
+    /* SECT-1 */
     .sect1__wrapper{
         display: block;
-      
     }
-
+    
     /* SECT-1 Блок с текстом*/
     .sect1__body{
         width: 100%;
@@ -129,9 +129,20 @@
     /* .header__link {
         font-size: 3em;
     } */
+
+}
+@media screen and (max-width: 750px) {
+    /* HEADER*/
     .header__link{
         display: none;
     }
+    .header__button form{
+        display: none;
+    }
+    .svg-menu{
+        display: block;
+    }
+
 }
 
 
