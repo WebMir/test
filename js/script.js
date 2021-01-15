@@ -1,6 +1,7 @@
 let svgMenu = document.querySelector('.svg-menu');
 let icMenu = document.querySelector('.ic_menu');
 let icClose = document.querySelector('.ic_close')
+let mobMenu = document.querySelector('.mob-menu')
 let icMenu1 = icMenu.style.display;
 let icClose1 = icClose.style.display;
 
@@ -46,10 +47,12 @@ svgMenu.addEventListener('click', () => {
         svgMenu.setAttribute('data-theme', 'dark')
         icMenu.setAttribute('style', 'display: none')
         icClose.setAttribute('style', 'display: block')
+        mobMenu.setAttribute('style', 'left: 0%')
     } else {
         svgMenu.setAttribute('data-theme', 'light')
         icClose.setAttribute('style', 'display: none')
         icMenu.setAttribute('style', 'display: block')
+        mobMenu.setAttribute('style', 'left: -100%')
     }
 })
 

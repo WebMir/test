@@ -24,45 +24,40 @@ div {border: 0px solid #ffb000;}
 
 /* HEADER	Обертка для логотипа и ссылок навигации*/
 
-.header__mob-menu{
+.mob-menu{
     background: var(--pink);
     width: calc(100% - 55px);
     height: 100vh;
     display: flex;
     flex-direction: column;
-	justify-content: center;
+	/* justify-content: center; */
 	align-items: flex-end;
 	column-gap: 0.8rem;
     margin-right: 0.8rem;
-    position: absolute;
+    position: fixed;
+    left: -100%;
     z-index: 9;
+    transition: 0.9s
 }
-.header__logo{
+.mob-menu__logo{
 	font-family: 'Little Caesar';
 	color: #ffb000;
 	font-size: 3em;
 	white-space: nowrap;
 }
-.header__link{
+.mob-menu__link{
 	font-family: Proxima-nova, sans-serif;
 	color: var(--textColor);
 	font-size: 2em;
 }
 /* HEADER	Кнопки из навигации*/
-.header__button{
-	display: flex;
-	justify-content:flex-end;
-	align-items: center;
-	column-gap: 0.5rem;
-	width: 100%;
-	max-width: 350px;
-}
-.header__button form{
+
+.mob-menu__button form{
 	width: 100%;
 	height: 40px;
 
 }
-.header__button button{
+.mob-menu__button button{
 	width: 100%;
 	height: 100%;
 	background-color: #ffc0ad;
@@ -72,7 +67,7 @@ div {border: 0px solid #ffb000;}
 	font-family: Proxima-nova, sans-serif;
 	cursor: pointer;
 }
-header .first-child{
+.header__mob-menu > .first-child{
 	background-color: #ffffff00;
 	color: #ffc0ad;
 	border: 2px solid #ffc0ad;
