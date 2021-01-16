@@ -12,7 +12,15 @@ div {border: 0px solid #ffb000;}
 :root {--linkColor: #ffc0ad;} /* Цвет ссылок */
 
 
+@media screen and (prefers-color-scheme: dark) {
 
+    .sect1{
+        background: var(--linkColor);
+     }
+
+
+
+}
 
 
 
