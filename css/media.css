@@ -18,10 +18,9 @@
     /* body{
         font-size: 80%;
     } */
-    .sect1__body{
+    body{
         font-size: 85%;
     }
-    .wrapper-padding{padding: var(--wrapperPaddingAverage);}
     /* SECT-5 Карточка */
     .sect5__card-wrapper{
         display: block;
@@ -32,15 +31,17 @@
 }
 
 @media screen and (max-width: 900px) {
-    /* body{
-        font-size: 70%;
-    } */
+    body{
+        font-size: 80%;
+    }
       /* HEADER*/
 
 
     /* SECT-1 */
     .sect1__wrapper{
         display: block;
+        /* background-color: blue; */
+        height: auto;
     }
     
     /* SECT-1 Блок с текстом*/
@@ -129,8 +130,11 @@
     /* .header__link {
         font-size: 3em;
     } */
-
+    body{
+        font-size: 75%;
+    }
 }
+
 @media screen and (max-width: 750px) {
     /* HEADER*/
     .header__link{
@@ -147,11 +151,21 @@
 
 
 @media screen and (max-width: 700px) {
-
+    body{
+        font-size: 70%;
+    }
 
 }
 
 @media screen and (max-width: 650px) {
+
+
+
+    /* .sect1__wrapper{
+        height: auto;
+     } */
+
+
     .header__link{
         margin: 0 0.5em;
     }
@@ -178,12 +192,10 @@
 
 }
 @media screen and (max-width: 460px) {
-    body{
-        font-size: 80;
-    }
-    .sect1__wrapper{
+
+    /* .sect1__wrapper{
         height: 95vh;
-     }
+     } */
     .header__link{
         display: none;
     }
@@ -228,7 +240,6 @@
     .sect1__button form:last-child{
         margin-left: 0px;
         }
-    .wrapper-padding{padding: var(--wrapperPaddingMin);}
 
 
 
@@ -238,7 +249,8 @@
 
     /* SECT-5 Обертка одной карточки */
     .sect5__card{
-        width: 18em;
+
+        min-width: 17em;
         min-width: auto;
         height: 350px;
         display: block;
@@ -315,9 +327,9 @@
     body{
         font-size: 70%;
     }
-    .sect5__card {
+    /* .sect5__card {
         width: 20em;
-    }
+    } */
 }
 
 @media screen and (max-width: 360px) {
@@ -328,6 +340,9 @@
         width: 100%;
      }
  
+     .header__logo{
+        font-size: 2em;
+    }
 }
 
 
@@ -341,19 +356,59 @@
 
 
 
+/* @media screen and (min-aspect-ratio: 16/9) { 
+    header {
+        background: #9c9483;
+    }
+
+
+    @media screen and (max-height: 360px) {
+        .sect1{
+            background: var(--pink);
+         }
+    }
+
+  } */
+
+
+  @media screen and (min-aspect-ratio: 2/1) { 
+    header {
+        background: #9c9483;
+    }
+
+
+    @media screen and (max-height: 700px) {
+        .sect1{
+            font-size: 70%;
+        }
+    }
+    @media screen and (max-height: 600px) {
+        .sect1{
+            font-size: 60%;
+        }
+    }
+    @media screen and (max-height: 500px) {
+        .sect1{
+            font-size: 50%;
+        }
+    }
+
+  }
 
 
 
 
 
 
+  /* @media screen and (max-aspect-ratio: 1/1) { 
 
-
-
-
-
-
-
+  @media screen and (max-width: 650px) {
+    .sect1__wrapper{
+        background-color: blue;
+        height: auto;
+     }
+    }
+  } */
 
 
 

@@ -6,7 +6,7 @@ div {border: 0px solid #ffb000;}
 :root {--darkBrown: #271c19;} /* Фон коричневый темный */
 :root {--pink: #ffc0ad;} /* Фон Розовый */
 :root {--wrapperPaddingAverage: 1.8%;} /* Падинги внутри sect__wrapper? (Средняя) */
-:root {--wrapperPaddingMin: 0.8%; } /* Падинги внутри sect__wrapper? (Минимальная) */
+:root {--wrapperPaddingMin: 0.9%; } /* Падинги внутри sect__wrapper? (Минимальная) */
 :root {--titleColor: #fffffe;} /* Цвет заголовка */
 :root {--textColor: #fff3ec;} /* Цвет текста */
 :root {--linkColor: #ffc0ad;} /* Цвет ссылок */
@@ -40,8 +40,8 @@ div {border: 0px solid #ffb000;}
     flex-direction: column;
 	/* justify-content: center; */
 	align-items: flex-end;
-	column-gap: 0.8rem;
-    margin-right: 0.8rem;
+	column-gap: 0.8em;
+    margin-right: 0.8em;
     position: fixed;
     left: -100%;
     z-index: 9;
@@ -80,9 +80,6 @@ div {border: 0px solid #ffb000;}
 	color: #ffc0ad;
 	border: 2px solid #ffc0ad;
 }
-
-
-
 
 
 
