@@ -47,7 +47,7 @@ svgMenu.addEventListener('click', () => {
         svgMenu.setAttribute('data-theme', 'dark')
         icMenu.setAttribute('style', 'display: none')
         icClose.setAttribute('style', 'display: block')
-        mobMenu.setAttribute('style', 'left: 0%')
+        mobMenu.setAttribute('style', 'left: calc(-10% - 48px)')
     } else {
         svgMenu.setAttribute('data-theme', 'light')
         icClose.setAttribute('style', 'display: none')

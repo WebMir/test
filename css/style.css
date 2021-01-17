@@ -221,7 +221,7 @@ header .first-child{
 	font-size: 4em;
 	color: var(--titleColor);
 	text-align: center;
-	margin-top: 1.3em ;	
+    margin-top: calc(0.1em + 56px); /* Отступ необходим для оталкивания от декоративного svg, в пикселях размер svg, в em то насколько оталкиватся*/
 	margin-bottom: 0.5em ;
 	line-height: 0.8;	
 }
@@ -239,6 +239,7 @@ header .first-child{
 .sect2__card{
 	display: flex;
 	justify-content: space-between;
+	column-gap: 1em;
 	margin: 50px auto;
 	max-width: 1400px;
 }
@@ -249,7 +250,6 @@ header .first-child{
 	max-width: 450px;
 	min-width: 250px;
 	border-radius: 5px;
-	margin: 10px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
