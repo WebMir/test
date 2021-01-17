@@ -44,7 +44,7 @@ div {border: 0px solid #ffb000;}
     position: fixed;
     left: -100%;
     z-index: 9;
-    transition: 0.9s
+    transition: 0.3s
 }
 .mob-menu__logo{
 	font-family: 'Little Caesar';
