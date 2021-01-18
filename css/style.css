@@ -529,11 +529,11 @@ header .first-child{
 	display: flex;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
+	column-gap: 2em;
 	margin: 0 auto;
+	padding: 5% 0%;
  }
- .sect6__wrapper a{
-	color: var(--textColo);
- }
+
 
 .sect6__logo{
 	width: 200px;
@@ -555,6 +555,11 @@ header .first-child{
 	row-gap: 10px;
 
 }
-
-
+.sect6__link-title{
+	color: #271c19;
+	font-size: 1.5em;
+}
+ .sect6__link{
+	color: #271c19;
+ }
 

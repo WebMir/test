@@ -394,7 +394,7 @@
     }
     @media screen and (max-height: 500px) {
         .sect1{
-            font-size: 50%;
+
         }
     }
 
@@ -421,3 +421,16 @@
 
 
 
+  @media screen and (min-width: 2500px) {
+
+    body{
+        font-size: 270%;
+    }
+
+    .header__wrapper, .sect1__wrapper, .sect2__wrapper,
+    .sect3__wrapper,.sect4__wrapper,.sect5__wrapper,
+    .sect6__wrapper, .sect7__wrapper {
+        max-width: 3500px;
+
+     }
+}
