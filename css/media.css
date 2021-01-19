@@ -147,6 +147,10 @@
         display: block;
     }
 
+    .sect6__list{
+        margin: 1.4em;
+    }
+
 }
 
 
@@ -190,7 +194,17 @@
          display: none;
      }
 
+     .sect6__wrapper{
+
+     }
+     .sect6__list{
+        margin: 1.3em;
+
+    }
+
 }
+
+
 @media screen and (max-width: 460px) {
 
     /* .sect1__wrapper{
@@ -303,7 +317,10 @@
 
 
 
-
+    .sect6__list{
+        row-gap: 8px;
+        margin: 2em;
+    }
 
 
 
@@ -347,6 +364,9 @@
     /* SECT-2 картинка карточки */
     .sect2 .card__image{
         height: 200px;
+    }
+    .sect6__list{
+        margin: 0.1em;
     }
 }
 

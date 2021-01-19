@@ -254,7 +254,7 @@ header .first-child{
 	flex-direction: column;
 	align-items: center;
 	column-gap: 1em;
-	box-shadow: 4px 4px 3px 0px #ffb000;
+	box-shadow: 0px 0px 3px 1px #ffb000;
 }
 /* SECT-2 картинка карточки */
 .sect2 .card__header{
@@ -328,7 +328,7 @@ header .first-child{
 	margin: 60px 0px;
 	display: flex;
 	align-items: center;
-	box-shadow: 0px 0px 3px 0px #ffb000;
+	box-shadow: 0px 0px 3px 1px #ffb000;
 }
 /* SECT-3 картинка карточки */
 .sect3 .card__header{
@@ -480,7 +480,7 @@ header .first-child{
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			box-shadow: 4px 4px 3px 0px #ffb000;
+			box-shadow: 0px 0px 3px 1px #ffb000;
 			border: 1px solid #fff3ec00;
 			overflow: hidden;
 		}
@@ -508,7 +508,7 @@ header .first-child{
 /* SECT-5 текст карточки */
 .sect5__card-info p{
 	font-family: Proxima-nova, sans-serif;
-	font-size: 1em;
+	font-size: 1.3em;
 	color: var(--textColor);
 	text-align: justify;
 	margin: 0.3em 0.5em;
@@ -529,14 +529,13 @@ header .first-child{
 	display: flex;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
-	column-gap: 2em;
+	/* column-gap: 2em; */
 	margin: 0 auto;
-	padding: 5% 0%;
  }
 
 
 .sect6__logo{
-	width: 200px;
+	width: 12em;
 }
 .sect6__logo img{
 	width: 100%;
@@ -547,14 +546,23 @@ header .first-child{
 
 } */
 .sect6__sic-icon img{
-	width: 44px;
+	width: 3em;
 }
 .sect6__list{
+	background-color: #555f5f7a;
+	min-width: 5em ;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	row-gap: 10px;
+	margin: 0.2em;
+	padding: 2em;
+	border-radius: 5px;
 
 }
+/* .sect6__list:first-child{
+	min-width:14em ;
+} */
 .sect6__link-title{
 	color: #271c19;
 	font-size: 1.5em;
