@@ -34,7 +34,7 @@ div {border: 0px solid #ffb000;}
 
 .mob-menu{
     background: var(--pink);
-    width: calc(100% - 50%);
+    width: calc(100%);
     height: 100vh;
     position: fixed;
     left: -100%;
