@@ -2,7 +2,7 @@
     viewBox="0 0 50 50" xml:space="preserve" width="100" height="100">
     <title>dashboard level</title>
     <g class="nc-icon-wrapper">
-        <circle cx="24" cy="24" r="23" stroke="#ff0000" stroke-width="1" fill="#ffb000" />
+        <circle cx="24" cy="24" r="23" stroke="#ffb000" stroke-width="3" stroke-dasharray="2" fill="#ffb000" />
         <path fill="#444444"
             d="M24,47C11.31787,47,1,36.68213,1,24S11.31787,1,24,1s23,10.31787,23,23S36.68213,47,24,47z" />
         <path fill="#FFFFFF"
