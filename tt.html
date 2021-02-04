@@ -1,87 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<link rel="stylesheet" href="zzz.css">
 
 </head>
+
 <body>
-	<section class="sect4">
-		<div class="sect4__wrapper wrapper-padding">
 
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" height="48" width="48">
-				<g class="nc-icon-wrapper js-transition-icon" data-effect="scale" data-event="click">
-					<g class="ic_menu" fill="#111111" style="">
-						<title>ic_menu</title>
-						<path d="M6 36h36v-4H6v4zm0-10h36v-4H6v4zm0-14v4h36v-4H6z"></path>
-					</g>
-					<g class="ic_close" fill="#111111" aria-hidden="true" style="display: none;">
-						<title>ic_close</title>
-						<path
-							d="M38 12.83L35.17 10 24 21.17 12.83 10 10 12.83 21.17 24 10 35.17 12.83 38 24 26.83 35.17 38 38 35.17 26.83 24z">
-						</path>
-					</g>
-				</g>
-			</svg>
-
+	<div class="grid"  data-masonry='{ "columnWidth": 2, "itemSelector": ".grid-1" }''>
+		<div class="grid-1  vvv">
+			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis deserunt ut culpa placeat, voluptates minima saepe delectus! Aperiam quas magnam provident officiis omnis velit commodi blanditiis quasi? Sunt eum ea sit doloribus quae, fugiat deserunt assumenda consequuntur perferendis similique molestias natus commodi. Iste eius consectetur dolorem fugiat tempore cumque a inventore veniam, amet voluptate assumenda tempora reiciendis soluta ullam ratione. Est maiores doloribus saepe ex aut nobis at, molestiae corporis quisquam minus fugiat error aspernatur tempore laborum veniam quos consequuntur?
 		</div>
-	</section>
+		<div class="grid-1 xxx"></div>
+		<div class="grid-1 ccc"></div>
+		<div class="grid-1 xxx"></div>
+		<div class="grid-1 ccc"></div>
+		<div class="grid-1 xxx"></div>
+		<div class="grid-1 zzz"></div>
+		<div class="grid-1 xxx"></div>
+		<div class="grid-item ccc"></div>
+		<div class="grid-1 zzz"></div>
+		<div class="grid-1 zzz"></div>
+		<div class="grid-1 zzz"></div>
+		<div class="grid-1 zzz"></div>
+		<div class="grid-1 zzz"></div>
+		<div class="grid-1 ccc"></div>
+		<div class="grid-1 zzz"></div>
+		<div class="grid-1 zzz"></div>
+		<div class="grid-1 zzz"></div>
+		<div class="grid-1 zzz"></div>
+		<div class="grid-1 zzz"></div>
+		<div class="grid-1c"></div>
+		<div class="grid-1iv>
+		<div class="grid-1
+		<div class="grid-1c"></div>
+		<div class="grid-1 ccc"></div>
+		<div class="grid-1 zzz"></div>
+		<div class="grid-1 zzz"></div>
+		<div class="grid-1 zzz"></div>
+		<div class="grid-1 zzz"></div>
+		<div class="grid-1 zzz"></div>
+		<div class="grid-1 zzz"></div>
+		<div class="grid-1 zzz"></div>
+		<div class="grid-1 xxx"></div>
+		<div class="grid-1 ccc"></div>
+		<div class="grid-1 ccc"></div>
+		<div class="grid-1 zzz"></div>
+	</div>
 
 
 
-
-
-
-	let svgMenu = document.querySelector('.svg-menu');
-	let icMenu = document.querySelector('.ic_menu');
-	let icClose = document.querySelector('.ic_close')
-	let icMenu1 = icMenu.style.display;
-	let icClose1 = icClose.style.display;
-	
-	
-	
-	// icMenu.setAttribute('style', 'display: none')
-	// icClose.setAttribute('style', 'display: none')
-	
-	
-	function svgclick (zzz) {
-	
-		let i = 1;
-	
-		if (i == icMenu1){
-			icMenu.setAttribute('style', 'opacity: 0;')
-			icClose.setAttribute('style', 'opacity: 1;')
-	
-		   alert('1111111')
-		}else{
-			icMenu.setAttribute('style', 'opacity: 1;')
-			icClose.setAttribute('style', 'opacity: 0;')
-			alert('000000000')
-		}
-	}
-	
-	// var time = 5;
-	
-	// if (time == 10)
-	//   {
-	//   alert("Доброе утро!");
-	//   }
-	// else
-	//   {
-	//     alert("Добрый день!");
-	//   }
-
-
-
-
-
-
-
-
-
-
-
-
+	<script src="js/masonry.js"> </script>
 </body>
+
 </html>

@@ -1,4 +1,4 @@
-div {border: 0px solid #ffb000;}
+div {border: 1px solid #ffb000;}
 
 
 :root {--wrapperPadding: 1px 5%;} /* Падинги внутри sect__wrapper? (Основная) */
@@ -80,8 +80,6 @@ div {border: 0px solid #ffb000;}
 /* .mob-menu .first-child{
 	
 } */
-
-
 
 
 

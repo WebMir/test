@@ -1,0 +1,47 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+.grid{
+   width: 1250px;
+   margin: 50px auto;
+}
+
+.grid-1{
+   background-color: blueviolet;
+   margin: 1px ;
+
+}
+.zzz{
+   width: 300px ;
+   height: 500px;
+}
+.xxx{
+   width: 300px ;
+   height: 300px;
+}
+.ccc{
+   width: 300px ;
+   height: 200px;
+}
+
+.vvv{
+   width: 300px ;
+   height: 100%;
+   max-height: 300px;
+}
+
+
+
+
+
+

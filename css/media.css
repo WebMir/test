@@ -92,39 +92,22 @@
 
     .title{font-size: 2.5em;}
     .text{font-size: 1.4em;}
-    .sect2__card{
+    .sect2__card-wrapper{
         display: block;
     }
-    .sect2 .card{
+       .sect2__card-wrapper{
+        margin: -5px auto;
+    } 
+    .sect2__card{
         margin: 10px auto;
     }
-    .sect3__card{/* Кбираем флекс чтоб карточки стали в колону*/
-        flex-direction: column;
+     /* SECT-3 Карточка */
+    .sect3__card-wrapper{/* Кбираем флекс чтоб карточки стали в колону*/
+        grid-template: none;
     }
     .sect3__card{
-        display: flex;
-        justify-content: space-between;
-        margin: 50px auto;
-        max-width: 1400px;
-        	/* flex-wrap: wrap; */
+
     }
-    .card__wrapper{
-        margin: -5px auto;
-    }
-    .sect3 .card{
-        background-color: #ffc0ad;
-        width: 100%;
-        max-width: 650px;
-        min-height: 120px;
-        border-radius: 5px;
-        margin: 10px 0px;
-        display: flex;
-        align-items: center;
-        box-shadow: 0px 0px 3px 0px #ffb000;
-    }
-    /* .sect3 .card__text, .sect2 .card__text{
-        font-size: 2em;
-    } */
 
 }
 
@@ -342,9 +325,6 @@
     body{
         font-size: 70%;
     }
-    /* .sect5__card {
-        width: 20em;
-    } */
 }
 
 @media screen and (max-width: 360px) {
@@ -360,7 +340,7 @@
         font-size: 2em;
     }
     /* SECT-2 картинка карточки */
-    .sect2 .card__image{
+    .sect2__card-img img{
         height: 200px;
     }
     .sect6__list{

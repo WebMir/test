@@ -8,12 +8,16 @@ button{
 	border: none;
 	border: 2px solid #ffc0ad;
 	border-radius: 5px;
+	background-color: #ffc0ad;
+	cursor: pointer;
+	font-family: Proxima-nova, sans-serif;
 }
 
 body{
 	background: #191919;
 	line-height: 1;
 	font-size: 100%;
+	font-family: Proxima-nova, sans-serif;
 }
 .wrapper-padding{
 	width: 100%;
@@ -21,6 +25,7 @@ body{
 	margin: 0 auto;
 	position: relative;
 	padding: var(--wrapperPadding);
+	
 }
 @font-face {
 	font-family: 'Proxima-nova';
@@ -56,12 +61,11 @@ header {
 	font-size: 3em;
 	white-space: nowrap;
 }
-.header__Nav-wrapper{
+.header__nav-wrapper{
 	width: 100%;
 	white-space: nowrap;
 }
 .header__link{
-	font-family: Proxima-nova, sans-serif;
 	color: var(--textColor);
 	font-size: 2em;
 	margin: 0 0.4em;
@@ -77,20 +81,13 @@ header {
 	width: 100%;
 	max-width: 320px;
 }
-.header__button form{
-	width: 100%;
-	height: 35px;
-}
 .header__button button{
-	width: 100%;
-	height: 100%;
-	background-color: #ffc0ad;
+	width: 6em;
+	height: 1.7em;
 	font-size: 20px;
 	color: #271c19;
-	font-family: Proxima-nova, sans-serif;
-	cursor: pointer;
 }
-header .first-child{
+.header__first-child{
 	background-color: #ffffff00;
 	color: #ffc0ad;
 	border: 2px solid #ffc0ad;
@@ -111,48 +108,38 @@ header .first-child{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	row-gap: 1em;
  }
 .sect1__body h1{
-	font-family: Proxima-nova, sans-serif;
 	font-size: 5em;
 	color: var(--titleColor);
-	margin-bottom: 20px;
 }
 .sect1__body p{
-	font-family: Proxima-nova, sans-serif;
 	font-size: 2em;
 	color:var(--textColor);
 
 }
-/* SECT-1 	Кнопки под текстом*/
+/* SECT-1 	Кнопки*/
 .sect1__button{
-
 	display: flex;
-	margin: 20px 0;
+	column-gap: 1em;
 }
 .sect1__button button{
-	width: 230px;
-	height: 50px;
-	background-color: #ffc0ad;
-	border-radius: 5px;
+	width: 10em;
+	height: 2em;
 	font-size: 20px;
 	color: #271c19;
-	cursor: pointer;
-	font-family: Proxima-nova, sans-serif;
 }
-.sect1 .last-child{
+.sect1__last-child{
 	background-color: #ffffff00;
 	color: #ffc0ad;
 	border: 2px solid #ffc0ad;
 }
-.sect1__button form:last-child{
-	margin-left: 0.3em;
-}
+
 /* SECT-1 Ссылка под кнопками */
 .sect1__body span{
 	font-size: 1.5em;
 	color: var(--textColor);
-	font-family: Proxima-nova, sans-serif;
 }
 .sect1__body span a{
 	color: var(--linkColor);
@@ -171,26 +158,21 @@ header .first-child{
  }
 
 /* SECT-2 */
-
 .sect2{
 	background: var(--darkBrown);
  }
  .sect2__wrapper{
-	position: relative;
-	/* display: flex;
-	justify-content: center;
-	align-items: center; */
+
  }
- /* SECT-2 Код для фоновой декорации */
+ /* SECT-2 Код для фоновой SVG декорации */
  .custom-shape-divider-top-1610055168 {
     position: absolute;
-    top: -0.1em;
+    top: -0.1em; /* по непонятной причине при нуле появляется полоса */
     left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
 	transform: rotate(180deg);
-	margin-bottom: 1em;
 }
 .custom-shape-divider-top-1610055168 svg {
     position: relative;
@@ -198,145 +180,115 @@ header .first-child{
     width: calc(100% + 1.3px);
     height: 56px;
 }
-
-/* SECT-2 Заголовок */
+/* SECT-2 Заголовок НЕЗАВИСИМЫЙ */
 .title{
-	font-family: Proxima-nova, sans-serif;
 	font-size: 4em;
 	color: var(--titleColor);
 	text-align: center;
-    margin-top: calc(0.1em + 56px); /* Отступ необходим для оталкивания от декоративного svg, в пикселях размер svg, в em то насколько оталкиватся*/
+    margin-top: calc(0.2em + 56px); /* Отступ необходим для оталкивания от декоративного svg, в пикселях размер svg, в em то насколько оталкиватся*/
 	margin-bottom: 0.5em ;
-	line-height: 0.8;	
 }
-/* SECT-2 Текст под заголовком */
+/* SECT-2 Текст под заголовком НЕЗАВИСИМЫЙ */
 .text{
 	max-width: 900px;
-	font-family: Proxima-nova, sans-serif;
 	font-size: 2em;
 	color: var(--textColor);
 	text-align: center;
 	margin: 0 auto;
-	margin: 0.5em auto;
 }
 /* SECT-2 Карточка */
-.sect2__card{
+.sect2__card-wrapper{
 	display: flex;
 	justify-content: space-between;
 	column-gap: 1em;
 	margin: 50px auto;
-	max-width: 1400px;
 }
 /* SECT-2 Обертка одной карточки */
-.sect2 .card{
+.sect2__card{
 	background-color: #55423d;
 	width: 100%;
-	max-width: 450px;
+	max-width: 400px;
 	min-width: 250px;
 	border-radius: 5px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	column-gap: 1em;
+	row-gap: 1em;
 	box-shadow: 0px 0px 3px 1px #ffb000;
+	padding: 0.5em;
 }
 /* SECT-2 картинка карточки */
-.sect2 .card__header{
-	display: flex;
-	justify-content: center;
-	margin: 15px;
+.sect2__card-img{
+	box-shadow: 0px 0px 0px 0px #ffffff
+
 }
-.sect2 .card__image{
-	height: 300px;
+.sect2__card-img img{
+	height: 18em;
 }
 /* SECT-2 заголовок карточки */
-.sect2 .card__title{
-	font-family: Proxima-nova, sans-serif;
+.sect2__card-title{
 	font-size: 2.5em;
 	text-align: center;
 	color: var(--titleColor);
 	margin: 5px;
 }
 /* SECT-2 текст карточки */
-.sect2 .card__text{
-	font-family: Proxima-nova, sans-serif;
-	font-size: 1.3em;
+.sect2__card-text{
+	font-size: 1.5em;
 	color: var(--textColor);
 	text-align: justify;
 	margin: 0.3em 0.5em;
 }
 /* SECT-2 кнопка карточки */
-.sect2 .card__button{
+.sect2__card-button{
 	width: 100px;
 	height: 30px;
-	border-radius: 5px;
-	font-family: Proxima-nova, sans-serif;
 	background-color: #ffffff00;
 	color: #ffc0ad;
-	margin: 5px;
-	border: 2px solid #ffc0ad;
-	cursor: pointer;
 }
 
 /* SECT-3 */
 .sect3{
 	background: var(--lightBrown);
  }
- .sect3__wrapper{
-	position: relative;
-	/* display: flex;
-	justify-content: center;
-	align-items: center; */
- }
-
+ /* .sect3__wrapper{
+ } */
+ 
  /* SECT-3 Карточка */
-.sect3__card{
-	display: flex;
+.sect3__card-wrapper{
+	display: grid;
 	justify-content: space-between;
-	column-gap: 60px;
-	/* flex-wrap: wrap; */
-	margin: 0 auto;
+	grid-template: 1fr 1fr/1fr 1fr;
+	grid-gap: 2em;
+	margin: 3em auto;
 	max-width: 1400px;
 }
 /* SECT-3 Обертка одной карточки */
-.sect3 .card{
+.sect3__card{
 	background-color: #ffc0ad;
 	width: 100%;
-	max-width: 650px;
-	min-width: 250px;
-	min-height: 120px;
 	border-radius: 5px;
-	margin: 60px 0px;
 	display: flex;
 	align-items: center;
 	box-shadow: 0px 0px 3px 1px #ffb000;
 }
 /* SECT-3 картинка карточки */
-.sect3 .card__header{
-	display: flex;
-	justify-content: center;
-	margin: 15px;
+.sect3__card-header{
+	margin: 15px auto;
 }
 /* SECT-3 текст карточки */
-.sect3 .card__text{
-	font-family: Proxima-nova, sans-serif;
+.sect3__card-text{
 	font-size: 1.3em;
-	color: #271c19;
-	text-align: left;
+	color: var(--darkBrownr);
 	margin: 20px;
 }
 
 /* SECT-4*/
-
 .sect4{
 	background:var(--darkBrown);
  }
- .sect4__wrapper{
-	position: relative;
-	/* display: flex;
-	justify-content: center;
-	align-items: center; */
- }
+ /* .sect4__wrapper{
+ } */
  .sect4__content{
 	max-width: 1400px;
 	height: 600px;
@@ -346,7 +298,6 @@ header .first-child{
 	margin: 0 auto;
 
  }
-
  .sect4__info{
 	width: 60%;
 	height: 100%;
