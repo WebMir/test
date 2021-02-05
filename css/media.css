@@ -284,14 +284,8 @@
         align-items: center;
         text-align: center;
     }
-    .sect1__img{
-        width: 100%;
-    }
-    .sect1__wrapper{
-        background: #c8921e91;
-
-    }
 }
+
 @media screen and (max-height: 200px){
     .header__wrapper{
         height: 2.5em;
