@@ -9,287 +9,192 @@
     }
 }
 @media screen and (max-width: 1100px) {
-
+    body{
+        font-size: 85%;
+    }
 }
 @media screen and (max-width: 1000px) {
     body{
-        font-size: 85%;
+        font-size: 80%;
     }
     /* SECT-5 Карточка */
     .sect5__card-wrapper{
         display: block;
     }
     .sect5__card{
-        margin: 10px auto;
+        margin: 20px auto;
     }
 }
 
-
-
 @media screen and (max-aspect-ratio: 1/1) { 
-    .sect1__wrapper{
-        background-color: #271c19b0;
-
-    }
 
 @media screen and (max-width: 900px) {
     body{
-        font-size: 80%;
+        font-size: 75%;
     }
-      /* HEADER*/
-
 
     /* SECT-1 */
     .sect1__wrapper{
-        display: block;
-        /* background-color: blue; */
-        height: auto;
+        flex-direction: column;
     }
-    
     /* SECT-1 Блок с текстом*/
     .sect1__body{
-        width: 100%;
+        width: auto;
         align-items: center;
+        text-align: center;
+        margin-top: 3em;
     }
     .sect1__body h1{
         font-size: 4.1em;
-        text-align: center;
     }
     .sect1__body p{
         font-size: 1.6em;
-        text-align: center;
     }
+}
+}
 
-    /* SECT-1 	Кнопки под текстом*/
-    .sect1__button{
-        width: 100%;
-        max-width: 450px;
-    }
-    .sect1__button button{
-        width: 100%;
-        height: 40px;
-    }
-    .sect1__button form{
-        width: 100%;
-    }
-    .sect1__button form:last-child{
-        margin-left: 5px;
-    }
-    /* SECT-1 Блок с SVG картинками*/
-    .sect1__img{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        height: 50%;
-        margin: 2em auto;
-    }
-    .sect1__img img{
-        width: 28%;
-    }
-}
-}
-    @media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) {
 
     .title{font-size: 2.5em;}
     .text{font-size: 1.4em;}
+
+    /* SECT-2 Карточка */
     .sect2__card-wrapper{
         display: block;
     }
-       .sect2__card-wrapper{
-        margin: -5px auto;
-    } 
     .sect2__card{
-        margin: 10px auto;
+        margin: 1em auto;
+        flex-direction:unset; 
     }
+    .sect2__card .none-bottom{
+        display: block;
+    }
+    .sect2__card .none-top{
+        display: none;
+    }
+
      /* SECT-3 Карточка */
-    .sect3__card-wrapper{/* Кбираем флекс чтоб карточки стали в колону*/
+    .sect3__card-wrapper{
         grid-template: none;
     }
-    .sect3__card{
-
-    }
-
 }
 
-
 @media screen and (max-width: 800px) {
-    /* .header__link {
-        font-size: 3em;
-    } */
     body{
-        font-size: 75%;
+        font-size: 70%;
     }
+}
+
+@media screen and (max-width: 750px) {
+
     /* HEADER*/
     .header__link{
         display: none;
     }
-    .header__button form{
+    .header__button button{
         display: none;
     }
     .svg-menu{
         display: block;
     }
-
-    .sect6__list{
-        margin: 1.4em;
+    .header__button {
+        column-gap: 0em; 
     }
-
-}
-
-@media screen and (max-width: 750px) {
-
-
+    /* SECT-6 */
+    .sect6__wrapper{
+        flex-wrap: wrap;
+    }
+    .sect6__list{
+        margin: 0.8em;
+    }
 }
 
 
 @media screen and (max-width: 700px) {
-    body{
-        font-size: 70%;
-    }
 
 }
 
 @media screen and (max-width: 650px) {
 
+    /* SECT-1 */
 
-     .sect4__info{
-        width: 100%;
-        margin: 0 auto;
-     }
+
+    /* SECT-4*/
      .sect4__img{
          display: none;
      }
-
-     .sect6__wrapper{
-
+     .sect4__info{
+        width: 100%;
      }
-     .sect6__list{
-        margin: 1.3em;
-
-    }
 
 }
 
 
 @media screen and (max-width: 580px) {
 
-    .sect1__wrapper{
-        height: auto;
-        display: block;
-     }
-     .sect1__body{
-        width: 100%;
-        align-items: center;
-        text-align: center;
-    }
     .sect1__body h1 {
-        font-size: 3.5em;
-    }
-    .sect1__img{
-        width: 100%;
+        font-size: 3.1em;
     }
 
-     /* .sect1__img{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-     } */
+    /* SECT-2 */
+    .sect2__card {
+        MAX-width: 380px;
+        flex-direction: column;
     }
+    /* SECT-6*/
+    .sect6__list{
+        margin: 0.2em;
+        padding: 1em;
+    }
+      
+}
 
 @media screen and (max-width: 460px) {
 
-    /* .sect1__wrapper{
-        height: 95vh;
-     } */
-    .header__link{
-        display: none;
+     /* SECT-1 Блок с текстом*/
+    .sect1__body h1{
+        font-size: 2.7em;
     }
-    .header__nav-icon{
-        display: block
+    .sect1__body p{
+         font-size: 1.6em;
     }
-    .sect1__wrapper{
-        display: block;
-      
+    /* SECT-1 	Кнопки под текстом*/
+    .sect1__button{
+        flex-direction: column;
+        width: 100%;
     }
-
-            /* SECT-1 Блок с текстом*/
-            .sect1__body{
-                width: 100%;
-                align-items: center;
-            }
-            .sect1__body h1{
-                font-size: 2.7em;
-            }
-            .sect1__body p{
-                font-size: 1.6em;
-            }
-
-            /* SECT-1 	Кнопки под текстом*/
-                .sect1__button{
-            flex-direction: column;
-            margin: 0;
-            }
-        .sect1__button{
-            width: 100%;
-            max-width: 520px;
-            }
-        .sect1__button button{
-            width: 80%;
-            height: 35px;
-            margin: 5px auto;
-            }
-    .sect1__body span {
-          font-size: 1em;
-       }
-
-    .sect1__button form:last-child{
-        margin-left: 0px;
-        }
-
-
-
-
-
-
+    .sect1__button button{
+        width: 70%;
+        margin: 0.3em auto;
+     }  
 
     /* SECT-5 Обертка одной карточки */
     .sect5__card{
         overflow: hidden;
-        min-width: 17em;
-        min-width: auto;
-        height: 350px;
+        max-width: 300px;
         display: block;
         position: relative;
     }
     .sect5__card:hover  .sect5__card-info{
         top: -80%;
     }
-
     .sect5__card-img{
         display: flex;
         justify-content: center;
-        width: 250px;
-        /* height: 90% ; */
-        overflow: hidden;
-        margin: 0 auto;
+        width: 100%;
+        height: 90%;
     }
-
-
-
-
     .sect5__card-info{
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 240px;
-        margin: 0 auto;
         position: relative;
         top: 0%;
         left: 0%;
         transition: top  0.3s;
     }
     .sect5__card-info p{
-        color:  #271c19;
     }
     .clip-path{
         display: block;
@@ -299,62 +204,114 @@
         left: 0%;
         width: 100%;
         height: 100%;
-        opacity: 50%;
+        opacity: 60%;
         transition: clip-path  0.9s;
     }
     .sect5__card:hover  .clip-path{
         clip-path: circle(100%);
     }
 
-
-
-    .sect6__list{
-        row-gap: 8px;
-        margin: 2em;
-    }
-
-
-
-
-
-    
 }
 
 @media screen and (max-width: 400px) {
 
-    body{
-        font-size: 70%;
-    }
 }
 
 @media screen and (max-width: 360px) {
-    /* body{
-        font-size: 50%;
-    } */
-
-    .sect4__info{
-        width: 100%;
-     }
- 
+    /* HEADER */
      .header__logo{
-        font-size: 2em;
+        font-size: 2.3em;
     }
-    /* SECT-2 картинка карточки */
-    .sect2__card-img img{
-        height: 200px;
+}
+
+@media screen and (max-aspect-ratio: 10/12) { 
+    /*Еесли длина больше чем ширина на 20% то первый экран перестанет растягиватся на весю viewport*/
+    .sect1__wrapper{
+        /* background: chartreuse; */
+        height: auto
+     }
+    .sect1__body {
+        margin-top: 3em;
     }
-    .sect6__list{
-        margin: 0.1em;
+}
+
+@media screen and (max-height: 550px){
+    .sect1{
+        font-size: 80%;
+    }
+    .sect1__button button{
+        height: 3em;
+    }
+    .sect4__img img{
+        position: sticky;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+     }
+}
+
+@media screen and (max-height: 460px){
+    .header__wrapper{
+        height: 4em;
+    }
+    .sect1{
+        font-size: 70%;
+    }
+    .sect1__body{
+        width: 60%;
+    }
+}
+
+@media screen and (max-height: 375px){
+    .header__wrapper{
+        height: 3em;
+    }
+    .sect1{
+        font-size: 60%;
+    }
+    .sect1__img {
+        height: 95%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-height: 290px) {
+    .sect1__img{
+        display: none;
+     }
+    .sect1__body{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .sect1__img{
+        width: 100%;
+    }
+    .sect1__wrapper{
+        background: #c8921e91;
+
+    }
+}
+@media screen and (max-height: 200px){
+    .header__wrapper{
+        height: 2.5em;
+    }
+    .sect1, .header{
+        font-size: 50%;
+    }
+
+}
+
+@media screen and (max-width: 460px) {
+    /* SECT-1*/
+    .sect1__body {
+        margin-top: 0em;
     }
 }
 
 
 
-
-
-
-
-  @media screen and (min-width: 2500px) {
+@media screen and (min-width: 2500px) {
 
     body{
         font-size: 270%;
@@ -366,83 +323,4 @@
         max-width: 3500px;
 
      }
-}
-
-
-
-
-
-/*111111111111111111111111111111111111111111111111111111*/
-
-
-
-@media screen and (max-height: 600px) and (min-width: 580px) {
-    .sect1{
-        font-size: 90%;
-    }
-}
-@media screen and (max-height: 550px) and (min-width: 580px) {
-    .sect1{
-        font-size: 80%;
-    }
-    .sect4__img img{
-        position: sticky;
-        top: 0;
-        width: 100%;
-        height: 100vh;
-     }
-    .sect1__button button{
-        width: 7em;
-        height: 30px;
-    }
-}
-@media screen and (max-height: 460px) and (min-width: 580px) {
-    .sect1{
-        font-size: 70%;
-    }
-    .sect1__body{
-        width: 60%;
-    }
-    .sect1__img{
-        width: 40%;
-    }
-    .sect1__body h1 {
-        font-size: 3.5em;
-    }
-}
-
-
-/*111111111111111111111111111111111111111111111111111111*/
-
-
-
-
-@media screen and (min-aspect-ratio: 10/6) { 
-
-    @media screen and (max-height: 550px) {
-
-    }
-
-    @media screen and (max-height: 480px) {
-
-    }
-    @media screen and (max-height: 340px) {
-        .sect1__wrapper{
-            height: auto;
-            display: block;
-         }
-         .sect1__body{
-            width: 100%;
-            align-items: center;
-            text-align: center;
-        }
-        .sect1__img{
-            width: 100%;
-        }
-    }
-
-    .sect1__wrapper{
-        background: #c8921e91;
-
-    }
 }

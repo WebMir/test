@@ -48,7 +48,7 @@ header {
 	background: var(--lightBrown);
 }
 .header__wrapper{
-	height: 70px;
+	height: 5em;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -58,7 +58,7 @@ header {
 .header__logo{
 	font-family: 'Little Caesar';
 	color: #ffb000;
-	font-size: 3em;
+	font-size: 2.8em;
 	white-space: nowrap;
 }
 .header__nav-wrapper{
@@ -67,7 +67,7 @@ header {
 }
 .header__link{
 	color: var(--textColor);
-	font-size: 2em;
+	font-size: 1.8em;
 	margin: 0 0.4em;
 }
 /* HEADER	Кнопки из навигации*/
@@ -77,17 +77,17 @@ header {
 .header__button{
 	display: flex;
 	justify-content: flex-end;
-	column-gap: 0.5rem;
+	column-gap: 0.5em;
 	width: 100%;
 	max-width: 320px;
 }
 .header__button button{
 	width: 6em;
 	height: 1.7em;
-	font-size: 20px;
+	font-size: 1em;
 	color: #271c19;
 }
-.header__first-child{
+#header__first-child{
 	background-color: #ffffff00;
 	color: #ffc0ad;
 	border: 2px solid #ffc0ad;
@@ -98,7 +98,7 @@ header {
 	background: var(--lightBrown);
  }
  .sect1__wrapper{
-	height: calc(100vh - 70px);
+	height: calc(100vh - 5em);
 	display: flex;
 	justify-content: center;
  }
@@ -111,7 +111,7 @@ header {
 	row-gap: 1em;
  }
 .sect1__body h1{
-	font-size: 5em;
+	font-size: 4.7em;
 	color: var(--titleColor);
 }
 .sect1__body p{
@@ -126,66 +126,62 @@ header {
 }
 .sect1__button button{
 	width: 10em;
-	height: 2em;
-	font-size: 20px;
+	height: 2.2em;
+	font-size: 1em;
 	color: #271c19;
 }
-.sect1__last-child{
+#sect1__last-child{
 	background-color: #ffffff00;
 	color: #ffc0ad;
 	border: 2px solid #ffc0ad;
 }
 
 /* SECT-1 Ссылка под кнопками */
-.sect1__body span{
-	font-size: 1.5em;
-	color: var(--textColor);
+.link{
+	font-size: 1.2em;
+	color: var(--titleColor);
+	margin: 0.2em 0.6em;
 }
-.sect1__body span a{
+.link a{
 	color: var(--linkColor);
 }
 /* SECT-1 Блок с SVG картинками*/
  .sect1__img{
 	display: flex;
-	justify-content: center;
 	width: 50%;
-	height: 100%;
+	height: calc(100% - 5em);
+	margin: 1em auto;
  }
  .sect1__img img{
 	width: 50%;
-	margin-top: 2em;
-
  }
 
 /* SECT-2 */
 .sect2{
 	background: var(--darkBrown);
  }
- .sect2__wrapper{
-
- }
  /* SECT-2 Код для фоновой SVG декорации */
  .custom-shape-divider-top-1610055168 {
-    position: absolute;
-    top: -0.1em; /* по непонятной причине при нуле появляется полоса */
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
+   position: absolute;
+   top: -0.1em; /* по непонятной причине при нуле появляется полоса */
+   left: 0;
+   width: 100%;
+   overflow: hidden;
+   line-height: 0;
 	transform: rotate(180deg);
 }
 .custom-shape-divider-top-1610055168 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 56px;
+   position: relative;
+   display: block;
+   width: calc(100% + 1.3px);
+   height: 56px;
 }
 /* SECT-2 Заголовок НЕЗАВИСИМЫЙ */
 .title{
 	font-size: 4em;
 	color: var(--titleColor);
 	text-align: center;
-    margin-top: calc(0.2em + 56px); /* Отступ необходим для оталкивания от декоративного svg, в пикселях размер svg, в em то насколько оталкиватся*/
+   margin-top: calc(0.2em + 56px); /* Отступ необходим для оталкивания от декоративного svg, в пикселях размер svg, в em то насколько оталкиватся*/
 	margin-bottom: 0.5em ;
 }
 /* SECT-2 Текст под заголовком НЕЗАВИСИМЫЙ */
@@ -207,7 +203,6 @@ header {
 .sect2__card{
 	background-color: #55423d;
 	width: 100%;
-	max-width: 400px;
 	min-width: 250px;
 	border-radius: 5px;
 	display: flex;
@@ -218,12 +213,15 @@ header {
 	padding: 0.5em;
 }
 /* SECT-2 картинка карточки */
+.sect2__card .none-bottom{
+	display: none;
+}
 .sect2__card-img{
 	box-shadow: 0px 0px 0px 0px #ffffff
-
 }
 .sect2__card-img img{
 	height: 18em;
+	transform: rotateY(180deg);
 }
 /* SECT-2 заголовок карточки */
 .sect2__card-title{
@@ -240,11 +238,15 @@ header {
 	margin: 0.3em 0.5em;
 }
 /* SECT-2 кнопка карточки */
+.sect2__link{
+	color: var(--linkColor);
+}
 .sect2__card-button{
 	width: 100px;
 	height: 30px;
 	background-color: #ffffff00;
 	color: #ffc0ad;
+	margin: 0.3em auto;
 }
 
 /* SECT-3 */
@@ -257,7 +259,6 @@ header {
  /* SECT-3 Карточка */
 .sect3__card-wrapper{
 	display: grid;
-	justify-content: space-between;
 	grid-template: 1fr 1fr/1fr 1fr;
 	grid-gap: 2em;
 	margin: 3em auto;
@@ -274,7 +275,7 @@ header {
 }
 /* SECT-3 картинка карточки */
 .sect3__card-header{
-	margin: 15px auto;
+	margin: 15px;
 }
 /* SECT-3 текст карточки */
 .sect3__card-text{
@@ -287,8 +288,6 @@ header {
 .sect4{
 	background:var(--darkBrown);
  }
- /* .sect4__wrapper{
- } */
  .sect4__content{
 	max-width: 1400px;
 	height: 600px;
@@ -296,7 +295,6 @@ header {
 	justify-content: center;
 	align-items: center;
 	margin: 0 auto;
-
  }
  .sect4__info{
 	width: 60%;
@@ -313,7 +311,6 @@ header {
 	transform: translate(0%, -50%);
  }
  .sect4__svg-p{
-	width: 100%;
 	height: 25%;
 	display: flex;
 	align-items: center;
@@ -339,7 +336,7 @@ header {
 	height: 100%;
 	transform: rotateY(180deg);
  }
-/* SECT-2 кнопка карточки */
+/* SECT-4 кнопка карточки */
  .sect4__button {
 	width: 230px;
 	margin: 1.7em auto;
@@ -368,9 +365,6 @@ header {
 .sect5{
 	background:var(--lightBrown);
  }
- /* .sect5__wrapper{
- } */
-
 /* SECT-5 Контейнер карточек */
 .sect5__card-wrapper{
 	max-width: 1400px;
@@ -382,13 +376,13 @@ header {
 /* SECT-5 Обертка одной карточки */
 .sect5__card{
 	background-color: var(--darkBrown);
-	height: 315px;
+	height: 380px;
 	border-radius: 5px;
-	padding: 2em;
+	padding: 1em;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	column-gap: 2em;
+	column-gap: 1em;
 	box-shadow: 0px 0px 3px 1px #ffb000;
 	/* border: 1px solid #fff3ec00; */
 }
@@ -396,20 +390,21 @@ header {
 .sect5__card-img{
 	background: url(../img/sect4-1.jpg) center top no-repeat;
 	background-size: cover;
-	width: 230px;
-	height: 280px;
+	width: 40%;
+	height: 100%;
 }
 /* SECT-5 Текст карточки */
 .sect5__card-info{
-	width: 70%;
+	width: 60%;
 }
 /* SECT-5 заголовок карточки */
 .sect5__card-info h2 {
 	font-family: 'Little Caesar';
 	color: #ffb000;
-	font-size: 3em;
+	font-size: 2em;
 	text-align: center;
 	white-space: nowrap;
+	margin: 0.5em auto;
 }
 /* SECT-5 текст карточки */
 .sect5__card-info p{
@@ -428,8 +423,6 @@ header {
 .sect6__wrapper{
 	display: flex;
 	justify-content: space-evenly;
-	flex-wrap: wrap;
-	/* column-gap: 2em; */
 }
 
 
@@ -448,7 +441,7 @@ header {
 	flex-direction: column;
 	row-gap: 0.4em;
 	margin: 0.2em;
-	padding: 2em;
+	padding: 1.5em;
 	border-radius: 5px;
 }
 .sect6__link-title{
