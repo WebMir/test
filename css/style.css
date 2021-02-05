@@ -368,82 +368,69 @@ header {
 .sect5{
 	background:var(--lightBrown);
  }
- .sect5__wrapper{
-	/* display: flex;
-	justify-content: center;
-	align-items: center; */
- }
-.sect5 img{
-	border-radius: 5px;
+ /* .sect5__wrapper{
+ } */
+
+/* SECT-5 Контейнер карточек */
+.sect5__card-wrapper{
+	max-width: 1400px;
+	margin: 2em auto;
+	display: flex;
+	justify-content: space-evenly;
+	column-gap: 1em;
 }
-	/* SECT-5 Карточка */
-	.sect5__card-wrapper{
-		display: flex;
-		justify-content: space-evenly;
-		margin: 0 auto;
-		max-width: 1400px
-	}
-		/* SECT-5 Обертка одной карточки */
-		.sect5__card{
-			background-color: var(--darkBrown);
-			width: 100%;
-			max-width: 600px;
-			min-width: 450px;
-			height: 315px;
-			border-radius: 5px;
-			margin: 1em;
-			padding: 1em;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			box-shadow: 0px 0px 3px 1px #ffb000;
-			border: 1px solid #fff3ec00;
-			overflow: hidden;
-		}
-			/* SECT-5 картинка карточки */
-			.sect5__card-img{
-				display: flex;
-				justify-content: center;
-				width: 230px;
-				height: 280px;
-				/* height: 90% ; */
-				overflow: hidden;
-			}
-			/* SECT-5 картинка карточки */
-			.sect5__card-info{
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				width: 58%;
-			}
+/* SECT-5 Обертка одной карточки */
+.sect5__card{
+	background-color: var(--darkBrown);
+	height: 315px;
+	border-radius: 5px;
+	padding: 2em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	column-gap: 2em;
+	box-shadow: 0px 0px 3px 1px #ffb000;
+	/* border: 1px solid #fff3ec00; */
+}
+/* SECT-5 картинка карточки */
+.sect5__card-img{
+	background: url(../img/sect4-1.jpg) center top no-repeat;
+	background-size: cover;
+	width: 230px;
+	height: 280px;
+}
+/* SECT-5 Текст карточки */
+.sect5__card-info{
+	width: 70%;
+}
 /* SECT-5 заголовок карточки */
-.sect5__card-info img{
-	margin: 5px auto;
-	width: 80%;
+.sect5__card-info h2 {
+	font-family: 'Little Caesar';
+	color: #ffb000;
+	font-size: 3em;
+	text-align: center;
+	white-space: nowrap;
 }
 /* SECT-5 текст карточки */
 .sect5__card-info p{
-	font-family: Proxima-nova, sans-serif;
 	font-size: 1.3em;
 	color: var(--textColor);
 	text-align: justify;
-	margin: 0.3em 0.5em;
 }
-.clip-path{
+.clip-path{/*Для моб экранов*/
 	display: none;
 }
 
 /* SECT-6*/
-
 .sect6{
 	background: var(--pink);
- }
- .sect6__wrapper{
+}
+.sect6__wrapper{
 	display: flex;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
 	/* column-gap: 2em; */
- }
+}
 
 
 .sect6__logo{
@@ -452,29 +439,18 @@ header {
 .sect6__logo img{
 	width: 100%;
 }
-/* .sect6__sic-icon{
-	width: 30%;
-	display: block;
-
-} */
 .sect6__sic-icon img{
 	width: 3em;
 }
 .sect6__list{
 	background-color: #555f5f7a;
-	min-width: 5em ;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	row-gap: 10px;
+	row-gap: 0.4em;
 	margin: 0.2em;
 	padding: 2em;
 	border-radius: 5px;
-
 }
-/* .sect6__list:first-child{
-	min-width:14em ;
-} */
 .sect6__link-title{
 	color: #271c19;
 	font-size: 1.5em;

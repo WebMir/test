@@ -1,7 +1,7 @@
 div {border: 1px solid #ffb000;}
 
 
-:root {--wrapperPadding: 1px 5%;} /* Падинги внутри sect__wrapper? (Основная) */
+:root {--wrapperPadding: 1px 4%;} /* Падинги внутри sect__wrapper? (Основная) */
 :root {--lightBrown: #55423d;} /* Фон коричневый светлый */
 :root {--darkBrown: #271c19;} /* Фон коричневый темный */
 :root {--pink: #ffc0ad;} /* Фон Розовый */
