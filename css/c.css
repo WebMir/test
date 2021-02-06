@@ -8,4 +8,4 @@
 :root {--textColor: #252525;} /* Цвет текста */
 :root {--linkColor: #fff3ec;} /* Цвет ссылок */
 :root {--logoColor: #222831;} /* Логотип */
-:root {--filtor: grayscale(100%);} /* Фильтор */ 
+:root {--Color: grayscale(100%);} /* фильтор */ 

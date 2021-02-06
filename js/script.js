@@ -23,23 +23,60 @@ svgMenu.addEventListener('click', () => {
 
 })
 
+
+
+// grey.setAttribute('data-theme', 'off')
+
+// grey.addEventListener('click', () => {
+
+//     if (grey.getAttribute('data-theme') === 'off') {
+//         grey.setAttribute('data-theme', 'on')
+//         body.setAttribute('style', 'filter: grayscale(100%)')
+//         grey.setAttribute('style', 'background-color: #ffffff00; color: var(--pink)')
+
+//     } else {
+//         grey.setAttribute('data-theme', 'off')
+//         body.setAttribute('style', 'filter: none')
+//         grey.setAttribute('style', 'background-color: ; color:')
+
+//     }
+
+// })
+
+
 let grey = document.querySelector('.grey');
+let brown = document.querySelector('.brown');
+let black = document.querySelector('.black');
+let cssClass = document.querySelector('.cssClass');
 let body = document.querySelector('body');
 
-grey.setAttribute('data-theme', 'off')
+brown.setAttribute('style', 'background-color: #ffffff00; color: var(--pink)')
 
-grey.addEventListener('click', () => {
+brown.addEventListener('click', () => {
+    cssClass.setAttribute('href', 'css/a.css')
 
-    if (grey.getAttribute('data-theme') === 'off') {
-        grey.setAttribute('data-theme', 'on')
-        body.setAttribute('style', 'filter: grayscale(100%)')
-        grey.setAttribute('style', 'background-color: #ffffff00; color: var(--pink)')
-
-    } else {
         grey.setAttribute('data-theme', 'off')
         body.setAttribute('style', 'filter: none')
         grey.setAttribute('style', 'background-color: ; color:')
+        black.setAttribute('style', 'background-color: ; color:')
+        brown.setAttribute('style', 'background-color: #ffffff00; color: var(--pink)')
+})
 
-    }
+black.addEventListener('click', () => {
+    cssClass.setAttribute('href', 'css/b.css')
 
+    grey.setAttribute('data-theme', 'off')
+    body.setAttribute('style', 'filter: none')
+    grey.setAttribute('style', 'background-color: ; color:')
+    brown.setAttribute('style', 'background-color: ; color:')
+    black.setAttribute('style', 'background-color: #ffffff00; color: var(--pink)')
+})
+
+grey.addEventListener('click', () => {
+    cssClass.setAttribute('href', 'css/a.css')
+    grey.setAttribute('data-theme', 'on')
+    body.setAttribute('style', 'filter: grayscale(100%)')
+    black.setAttribute('style', 'background-color: ; color:')
+    brown.setAttribute('style', 'background-color: ; color:')
+    grey.setAttribute('style', 'background-color: #ffffff00; color: var(--pink)')
 })

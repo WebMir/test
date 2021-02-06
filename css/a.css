@@ -7,12 +7,6 @@
 :root {--titleColor: #fffffe;} /* Цвет заголовка */
 :root {--textColor: #fff3ec;} /* Цвет текста */
 :root {--linkColor: #ffc0ad;} /* Цвет ссылок */
+:root {--logoColor: #ffb000;} /* Логотип */
+:root {--mobBkColor: #9656a1;} /* Логотип */
 :root {--filtor: grayscale(100%);} /* Фильтор */ 
-
-
-
-
-
-
-
-

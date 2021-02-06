@@ -24,6 +24,9 @@
     .sect5__card{
         margin: 20px auto;
     }
+    .sect5__card-info p{
+        font-size: 1.4em;
+    }
 }
 
 @media screen and (max-aspect-ratio: 1/1) { 
@@ -132,10 +135,6 @@
 
 @media screen and (max-width: 580px) {
 
-    body{
-        font-size: 60%;
-    }
-
     .sect1__body h1 {
         font-size: 3.1em;
     }
@@ -199,6 +198,7 @@
         transition: top  0.3s;
     }
     .sect5__card-info p{
+        opacity: 0;
     }
     .clip-path{
         display: block;
@@ -214,10 +214,9 @@
     .sect5__card:hover  .clip-path{
         clip-path: circle(100%);
     }
-
-}
-
-@media screen and (max-width: 400px) {
+    .sect5__card:hover  .sect5__card-info p{
+        opacity: 1;
+    }
 
 }
 
