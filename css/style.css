@@ -3,18 +3,23 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-a{text-decoration: none; }
+a{
+	text-decoration: none;
+	color: var(--linkColor);
+
+}
 button{
 	border: none;
-	border: 2px solid #ffc0ad;
+	border: 2px solid var(--pink);
 	border-radius: 5px;
-	background-color: #ffc0ad;
+	background-color: var(--pink);
 	cursor: pointer;
 	font-family: Proxima-nova, sans-serif;
 }
 
 body{
-	background: #191919;
+	min-width: 280px;
+	background: var(--darkBrown);
 	line-height: 1;
 	font-size: 100%;
 	font-family: Proxima-nova, sans-serif;
@@ -57,7 +62,7 @@ header {
 /* HEADER	Стили для логотипа и ссылок навигации*/
 .header__logo{
 	font-family: 'Little Caesar';
-	color: #ffb000;
+	color: var(--logoColor);
 	font-size: 2.8em;
 	white-space: nowrap;
 }
@@ -85,12 +90,7 @@ header {
 	width: 6em;
 	height: 1.7em;
 	font-size: 1em;
-	color: #271c19;
-}
-#header__first-child{
-	background-color: #ffffff00;
-	color: #ffc0ad;
-	border: 2px solid #ffc0ad;
+	color: var(--darkBrown);
 }
 
 /* SECT-1*/
@@ -128,12 +128,11 @@ header {
 	width: 10em;
 	height: 2.2em;
 	font-size: 1em;
-	color: #271c19;
+	color: var(--darkBrown);
 }
 #sect1__last-child{
 	background-color: #ffffff00;
-	color: #ffc0ad;
-	border: 2px solid #ffc0ad;
+	color: var(--pink);
 }
 
 /* SECT-1 Ссылка под кнопками */
@@ -161,7 +160,7 @@ header {
 	background: var(--darkBrown);
  }
  /* SECT-2 Код для фоновой SVG декорации */
- .custom-shape-divider-top-1610055168 {
+ .sect__svg-decor {
    position: absolute;
    top: -0.1em; /* по непонятной причине при нуле появляется полоса */
    left: 0;
@@ -170,11 +169,14 @@ header {
    line-height: 0;
 	transform: rotate(180deg);
 }
-.custom-shape-divider-top-1610055168 svg {
+.sect__svg-decor svg {
    position: relative;
    display: block;
    width: calc(100% + 1.3px);
    height: 56px;
+}
+.sect2__svg-decor{
+	fill: var(--lightBrown);
 }
 /* SECT-2 Заголовок НЕЗАВИСИМЫЙ */
 .title{
@@ -201,23 +203,18 @@ header {
 }
 /* SECT-2 Обертка одной карточки */
 .sect2__card{
-	background-color: #55423d;
+	background-color: var(--lightBrown);
 	width: 100%;
-	min-width: 250px;
 	border-radius: 5px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	row-gap: 1em;
-	box-shadow: 0px 0px 3px 1px #ffb000;
 	padding: 0.5em;
 }
 /* SECT-2 картинка карточки */
 .sect2__card .none-bottom{
 	display: none;
-}
-.sect2__card-img{
-	box-shadow: 0px 0px 0px 0px #ffffff
 }
 .sect2__card-img img{
 	height: 18em;
@@ -245,7 +242,7 @@ header {
 	width: 100px;
 	height: 30px;
 	background-color: #ffffff00;
-	color: #ffc0ad;
+	color: var(--pink);
 	margin: 0.3em auto;
 }
 
@@ -253,9 +250,6 @@ header {
 .sect3{
 	background: var(--lightBrown);
  }
- /* .sect3__wrapper{
- } */
- 
  /* SECT-3 Карточка */
 .sect3__card-wrapper{
 	display: grid;
@@ -264,14 +258,17 @@ header {
 	margin: 3em auto;
 	max-width: 1400px;
 }
+/* SECT-3 Цвет для svg для декора */
+.sect3__svg-decor{
+	fill: var(--darkBrown);
+}
 /* SECT-3 Обертка одной карточки */
 .sect3__card{
-	background-color: #ffc0ad;
+	background-color: var(--pink);
 	width: 100%;
 	border-radius: 5px;
 	display: flex;
 	align-items: center;
-	box-shadow: 0px 0px 3px 1px #ffb000;
 }
 /* SECT-3 картинка карточки */
 .sect3__card-header{
@@ -296,6 +293,10 @@ header {
 	align-items: center;
 	margin: 0 auto;
  }
+  /* SECT-4 Цвет для svg для декора */
+.sect4__svg-decor{
+	fill: var(--lightBrown);
+}
  .sect4__info{
 	width: 60%;
 	height: 100%;
@@ -304,7 +305,7 @@ header {
  .sect4__linear{
 	width: 0%;
 	height: 70%;
-	border-left: 3px dotted #ffb000;;
+	border-left: 4px dotted var(--logoColor);
 	position: absolute;
 	top: 50%;
 	left: 60px;
@@ -373,6 +374,10 @@ header {
 	justify-content: space-evenly;
 	column-gap: 1em;
 }
+ /* SECT-5 Цвет для svg для декора */
+ .sect5__svg-decor{
+	fill: var(--darkBrown);
+}
 /* SECT-5 Обертка одной карточки */
 .sect5__card{
 	background-color: var(--darkBrown);
@@ -383,8 +388,6 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	column-gap: 1em;
-	box-shadow: 0px 0px 3px 1px #ffb000;
-	/* border: 1px solid #fff3ec00; */
 }
 /* SECT-5 картинка карточки */
 .sect5__card-img{
@@ -400,7 +403,7 @@ header {
 /* SECT-5 заголовок карточки */
 .sect5__card-info h2 {
 	font-family: 'Little Caesar';
-	color: #ffb000;
+	color: var(--logoColor);
 	font-size: 2.1em;
 	text-align: center;
 	white-space: nowrap;
@@ -418,14 +421,12 @@ header {
 
 /* SECT-6*/
 .sect6{
-	background: var(--pink);
+	background:var(--darkBrown);
 }
 .sect6__wrapper{
 	display: flex;
 	justify-content: space-evenly;
 }
-
-
 .sect6__logo{
 	width: 12em;
 }
@@ -445,10 +446,54 @@ header {
 	border-radius: 5px;
 }
 .sect6__link-title{
-	color: #271c19;
-	font-size: 1.5em;
+	font-weight: 900;
 }
- .sect6__link{
-	color: #271c19;
- }
 
+
+/* HEADER	Обертка для логотипа и ссылок навигации*/
+.mob-menu{
+	background: var(--pink);
+	width: calc(100%);
+	height: 100vh;
+	position: fixed;
+	left: -100%;
+	z-index: 9;
+	transition: 0.3s
+}
+.mob-menu__wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  column-gap: 0.8em;
+  row-gap: 0.8em;
+  margin: 5% 5%;
+}
+.mob-menu .header__logo{
+  color: #271c19;
+
+}
+.mob-menu__link{
+  font-family: Proxima-nova, sans-serif;
+  color: #271c19;
+  font-size: 2em;
+}
+/* HEADER	Кнопки из навигации*/
+.mob-menu form{
+  width: 7em;
+  height: 3em;
+}
+.mob-menu button{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  font-size: 1.6em;
+  color: #271c19;
+  font-family: Proxima-nova, sans-serif;
+  cursor: pointer;
+  border: 2px solid #271c19;
+  background-color: #ffffff00;
+}
+
+
+
+div {border: 0px solid #ffb000;}

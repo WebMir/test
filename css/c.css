@@ -1,0 +1,11 @@
+:root {--wrapperPadding: 1px 4%;} /* Падинги внутри sect__wrapper? (Основная) */
+:root {--lightBrown: #5b5b5b;} /* Фон коричневый светлый */
+:root {--darkBrown: #cdd0cb;} /* Фон коричневый темный */
+:root {--pink: #222831;} /* Фон Розовый */
+:root {--wrapperPaddingAverage: 1.8%;} /* Падинги внутри sect__wrapper? (Средняя) */
+:root {--wrapperPaddingMin: 0.9%; } /* Падинги внутри sect__wrapper? (Минимальная) */
+:root {--titleColor: #222831;} /* Цвет заголовка */
+:root {--textColor: #252525;} /* Цвет текста */
+:root {--linkColor: #fff3ec;} /* Цвет ссылок */
+:root {--logoColor: #222831;} /* Логотип */
+:root {--filtor: grayscale(100%);} /* Фильтор */ 

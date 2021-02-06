@@ -1,6 +1,3 @@
-div {border: 0px solid #ffb000;}
-
-
 :root {--wrapperPadding: 1px 4%;} /* Падинги внутри sect__wrapper? (Основная) */
 :root {--lightBrown: #55423d;} /* Фон коричневый светлый */
 :root {--darkBrown: #271c19;} /* Фон коричневый темный */
@@ -10,76 +7,9 @@ div {border: 0px solid #ffb000;}
 :root {--titleColor: #fffffe;} /* Цвет заголовка */
 :root {--textColor: #fff3ec;} /* Цвет текста */
 :root {--linkColor: #ffc0ad;} /* Цвет ссылок */
+:root {--filtor: grayscale(100%);} /* Фильтор */ 
 
 
-@media screen and (prefers-color-scheme: dark) {
-
-    .sect1{
-        background: var(--linkColor);
-     }
-
-
-
-}
-
-
-
-
-
-
-
-
-
-/* HEADER	Обертка для логотипа и ссылок навигации*/
-
-.mob-menu{
-    background: var(--pink);
-    width: calc(100%);
-    height: 100vh;
-    position: fixed;
-    left: -100%;
-    z-index: 9;
-    transition: 0.3s
-}
-.mob-menu__wrapper{
-	display: flex;
-    flex-direction: column;
-	/* justify-content: center; */
-	align-items: flex-end;
-	column-gap: 0.8em;
-	row-gap: 0.8em;
-	margin: 5% 5%;
-}
-.mob-menu .header__logo{
-	color: #271c19;
-
-}
-.mob-menu__link{
-	font-family: Proxima-nova, sans-serif;
-	color: #271c19;
-	font-size: 2em;
-}
-/* HEADER	Кнопки из навигации*/
-
-.mob-menu form{
-	width: 7em;
-	height: 3em;
-
-}
-.mob-menu button{
-	width: 100%;
-	height: 100%;
-	border-radius: 5px;
-	font-size: 1.6em;
-	color: #271c19;
-	font-family: Proxima-nova, sans-serif;
-	cursor: pointer;
-	border: 2px solid #271c19;
-	background-color: #ffffff00;
-}
-/* .mob-menu .first-child{
-	
-} */
 
 
 

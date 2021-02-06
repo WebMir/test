@@ -5,40 +5,6 @@ let mobMenu = document.querySelector('.mob-menu')
 let icMenu1 = icMenu.style.display;
 let icClose1 = icClose.style.display;
 
-
-
-// icMenu.setAttribute('style', 'display: none')
-// icClose.setAttribute('style', 'display: none')
-
-
-// function clickMenu(zzz) {
-//     let i = 'block';
-
-//     if (i == icMenu1){
-//         icMenu.setAttribute('style', 'display: none')
-//         icClose.setAttribute('style', 'display: block')
-
-//        alert('1111111')
-//     }
-// }
-
-// function clickClose(CCC) {
-//     let i = 'block';
-
-//     if (i == icMenu1){
-//         icClose.setAttribute('style', 'display: none')
-//         icMenu.setAttribute('style', 'display: block')
-//         alert('000000000')
-//     }
-// }
-
-
-
-
-
-
-
-
 svgMenu.setAttribute('data-theme', 'light')
 
 svgMenu.addEventListener('click', () => {
@@ -54,6 +20,26 @@ svgMenu.addEventListener('click', () => {
         icMenu.setAttribute('style', 'display: block')
         mobMenu.setAttribute('style', 'left: -100%')
     }
+
 })
 
+let grey = document.querySelector('.grey');
+let body = document.querySelector('body');
 
+grey.setAttribute('data-theme', 'off')
+
+grey.addEventListener('click', () => {
+
+    if (grey.getAttribute('data-theme') === 'off') {
+        grey.setAttribute('data-theme', 'on')
+        body.setAttribute('style', 'filter: grayscale(100%)')
+        grey.setAttribute('style', 'background-color: #ffffff00; color: var(--pink)')
+
+    } else {
+        grey.setAttribute('data-theme', 'off')
+        body.setAttribute('style', 'filter: none')
+        grey.setAttribute('style', 'background-color: ; color:')
+
+    }
+
+})

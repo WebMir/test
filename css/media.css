@@ -105,7 +105,7 @@
         flex-wrap: wrap;
     }
     .sect6__list{
-        margin: 0.8em;
+        margin: 0.9em;
     }
 }
 
@@ -132,13 +132,17 @@
 
 @media screen and (max-width: 580px) {
 
+    body{
+        font-size: 60%;
+    }
+
     .sect1__body h1 {
         font-size: 3.1em;
     }
 
     /* SECT-2 */
     .sect2__card {
-        MAX-width: 380px;
+        MAX-width: 350px;
         flex-direction: column;
     }
     /* SECT-6*/
