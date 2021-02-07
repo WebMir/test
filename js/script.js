@@ -23,27 +23,6 @@ svgMenu.addEventListener('click', () => {
 
 })
 
-
-
-// grey.setAttribute('data-theme', 'off')
-
-// grey.addEventListener('click', () => {
-
-//     if (grey.getAttribute('data-theme') === 'off') {
-//         grey.setAttribute('data-theme', 'on')
-//         body.setAttribute('style', 'filter: grayscale(100%)')
-//         grey.setAttribute('style', 'background-color: #ffffff00; color: var(--pink)')
-
-//     } else {
-//         grey.setAttribute('data-theme', 'off')
-//         body.setAttribute('style', 'filter: none')
-//         grey.setAttribute('style', 'background-color: ; color:')
-
-//     }
-
-// })
-
-
 let grey = document.querySelector('.grey');
 let brown = document.querySelector('.brown');
 let black = document.querySelector('.black');

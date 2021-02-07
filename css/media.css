@@ -239,9 +239,6 @@
 }
 
 @media screen and (max-height: 550px){
-    .sect1{
-        font-size: 80%;
-    }
     .sect1__button button{
         height: 3em;
     }
@@ -255,7 +252,7 @@
 
 @media screen and (max-height: 460px){
     .header__wrapper{
-        height: 4em;
+        font-size: 80%;
     }
     .sect1{
         font-size: 70%;
@@ -266,6 +263,9 @@
 }
 
 @media screen and (max-height: 375px){
+    .header{
+        height: 3em;
+    }
     .header__wrapper{
         height: 3em;
     }

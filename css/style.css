@@ -87,7 +87,7 @@ header {
 	max-width: 320px;
 }
 .header__button button{
-	width: 6em;
+	width: 4.3em;
 	height: 1.7em;
 	font-size: 1em;
 	color: var(--darkBrown);
@@ -449,8 +449,17 @@ header {
 	font-weight: 900;
 }
 
+/* HEADER	Влючение и отключение моб меню*/
+.mob-menu{
+	display: none;
+}
+@media screen and (max-width: 750px) {
+	.mob-menu{
+		display: block;
+	}
+}
 
-/* HEADER	Обертка для логотипа и ссылок навигации*/
+/* HEADER	Мобильное меню*/
 .mob-menu{
 	background: var(--mobBkColor);
 	width: 100%;
@@ -466,13 +475,13 @@ header {
   align-items: flex-end;
   column-gap: 0.8em;
   row-gap: 0.8em;
-  margin: 5% 5%;
+  margin: 5% 5% 5% calc(5% + (8% + 48px));
 }
 .mob-menu .header__logo{
 	color: var(--logoColor);
 }
 .mob-menu__link{
-  color: var(--darkBrown);
+  color: var(--textColor);
   font-size: 2em;
 }
 /* HEADER	Кнопки из навигации*/
@@ -481,9 +490,11 @@ header {
 }
 .mob-menu button{
   width: 100%;
-  font-size: 1.6em;
 }
-
+.mob-menu p{
+	color: var(--textColor);
+	font-size: 1.5em;
+}
 
 
 div {border: 0px solid #ffb000;}
